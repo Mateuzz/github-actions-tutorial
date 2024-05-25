@@ -25,4 +25,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ${{ format('{}/node-app-github-actions-tutorial', secrets.DOCKERHUB_USERNAME) }}
+          tags: ${{ format('{0}/node-app-github-actions-tutorial', secrets.DOCKERHUB_USERNAME) }}
